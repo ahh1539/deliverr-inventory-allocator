@@ -3,6 +3,7 @@ import java.util.Map;
 
 /*
 @author Alex Hurley
+github @ahh1539
 Date: 8/31/2020
  */
 
@@ -13,10 +14,10 @@ public class Warehouse {
         Map<String, Map<String, Integer>> resultMap = new HashMap<String, Map<String, Integer>>();
 
         for (Map.Entry<String,Integer> ordered_item : itemsOrdered.entrySet()) {
-            Boolean remaining_warehouses = true;
+            Boolean remainingWarehouses = true;
             remainingNumNeeded = ordered_item.getValue();
             
-            while (remainingNumNeeded != 0 && remaining_warehouses) {
+            while (remainingNumNeeded != 0 && remainingWarehouses) {
                 for (Map.Entry<String, Map<String, Integer>> warehouseItem : warehouseInventory.entrySet()) {
                     if (!resultMap.containsKey(warehouseItem.getKey())){
                         resultMap.put(warehouseItem.getKey(), new HashMap<String, Integer>());
@@ -32,7 +33,7 @@ public class Warehouse {
                         }
                     }
                 }
-                remaining_warehouses = false;
+                remainingWarehouses = false;
             }
             if (remainingNumNeeded != 0) {
                 for (Map.Entry<String, Map<String, Integer>> thingy : resultMap.entrySet()) {
