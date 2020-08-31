@@ -47,6 +47,12 @@ public class Warehouse {
         return resultMap;
     }
 
+    /* I am not removing the items from the inventory of the warehouses above because
+    * it was not mentioned in the desired requirements also I am assuming that this
+    * is not taking away from their inventories, just calculating how to get the cheapest
+    * shipment to fufill the order, Thanks!!
+    */
+
     public static void main(String[] args) {
 
         Map<String, Integer> orderedItems = new HashMap<String, Integer>();
