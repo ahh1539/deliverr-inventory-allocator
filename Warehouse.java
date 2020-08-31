@@ -53,8 +53,9 @@ public class Warehouse {
         Map<String, Map<String, Integer>> warehouseIventories = new HashMap<String, Map<String, Integer>>();
 
         /*
-         * First Test Case Input: [{apple:1},{owd:{apple:3}}] Expected output:
-         * {owd={apple=1}}
+         * First Test Case 
+         * Input: [{apple:1},{owd:{apple:3}}] 
+         * Expected output: {owd={apple=1}}
          */
         orderedItems.put("apple", 1);
         warehouseIventories.put("owd", new HashMap<String, Integer>());
@@ -64,8 +65,9 @@ public class Warehouse {
         warehouseIventories.clear();
 
         /*
-         * Second Test Case Input: [{apple:10},{owd:{apple:5}, dm:{apple:5}}] Expected
-         * output: {dm={apple=5}, owd={apple=5}}
+         * Second Test Case
+         * Input: [{apple:10},{owd:{apple:5}, dm:{apple:5}}] 
+         * Expected output: {dm={apple=5}, owd={apple=5}}
          */
         orderedItems.put("apple", 10);
         warehouseIventories.put("owd", new HashMap<String, Integer>());
@@ -79,7 +81,9 @@ public class Warehouse {
         warehouseIventories.clear();
 
         /*
-         * Third Test Case Input: [{apple:1},{owd:{apple:0}}] Expected output: {owd={}}
+         * Third Test Case 
+         * Input: [{apple:1},{owd:{apple:0}}] 
+         * Expected output: {owd={}}
          */
         orderedItems.put("apple", 1);
         warehouseIventories.put("owd", new HashMap<String, Integer>());
@@ -89,9 +93,9 @@ public class Warehouse {
         warehouseIventories.clear();
 
         /*
-         * Fourth Test Case Input: [{apple:4, orange:5, orange:5}, {owd:{apple:3,
-         * orange:1, banana:4}, dm:{apple:1, orange:4, banana:3}}] Expected output:
-         * {dm={orange=4, banana=3, apple=1}, owd={orange=1, banana=2, apple=3}}
+         * Fourth Test Case 
+         * Input: [{apple:4, orange:5, orange:5}, {owd:{apple:3, orange:1, banana:4}, dm:{apple:1, orange:4, banana:3}}] 
+         * Expected output:{dm={orange=4, banana=3, apple=1}, owd={orange=1, banana=2, apple=3}}
          */
         orderedItems.put("orange", 5);
         orderedItems.put("apple", 4);
@@ -113,9 +117,9 @@ public class Warehouse {
         warehouseIventories.clear();
 
         /*
-         * Fifth Test Case Input: [{orange:24}, {owd:{orange:6}, dm:{orange:6},
-         * pq:{orange:6}, gfk:{orange:7}}] Expected output: {pq={orange=6},
-         * dm={orange=6}, owd={orange=6}, gfk={orange=6}}
+         * Fifth Test Case 
+         * Input: [{orange:24}, {owd:{orange:6}, dm:{orange:6}, pq:{orange:6}, gfk:{orange:7}}] 
+         * Expected output: {pq={orange=6}, dm={orange=6}, owd={orange=6}, gfk={orange=6}}
          */
         orderedItems.put("orange", 24);
 
