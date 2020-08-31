@@ -39,8 +39,8 @@ public class Warehouse {
                 remainingWarehouses = false;
             }
             if (remainingNumNeeded != 0) {
-                for (Map.Entry<String, Map<String, Integer>> thingy : resultMap.entrySet()) {
-                    resultMap.get(thingy.getKey()).remove(ordered_item.getKey());
+                for (Map.Entry<String, Map<String, Integer>> pairToRemove : resultMap.entrySet()) {
+                    resultMap.get(pairToRemove.getKey()).remove(ordered_item.getKey());
                 }
             }
         }
